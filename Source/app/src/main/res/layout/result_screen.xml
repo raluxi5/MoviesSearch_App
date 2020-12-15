@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tapes"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="194dp"
+        android:layout_height="285dp"
+        app:layout_constraintEnd_toStartOf="@+id/frame2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:text="title"
+                android:textColor="#B36F6D"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="0dp"
+                android:fontFamily="sans-serif-black"
+                android:text="year"
+                android:textColor="#B36F6D"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/poster"
+                android:layout_width="match_parent"
+                android:layout_height="236dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="147dp"
+        android:layout_height="229dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frame1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/imdbRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="10dp"
+                android:text="imdbRating"
+                android:textColor="#B36F6D"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rottenTomatoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="10dp"
+                android:text="rottenTomatoes"
+                android:textColor="#B36F6D"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/metacritic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="10dp"
+                android:text="metacritic"
+                android:textColor="#B36F6D"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame3"
+        android:layout_width="291dp"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame1"
+        app:layout_constraintVertical_bias="0.13999999">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:paddingHorizontal="17dp"
+                android:paddingVertical="15dp"
+                android:text="genre"
+                android:textColor="#B36F6D"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:paddingHorizontal="17dp"
+                android:paddingVertical="15dp"
+                android:text="director"
+                android:textColor="#B36F6D"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/writer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                android:text="writer"
+                android:textColor="#B36F6D"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/actors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:paddingHorizontal="17dp"
+                android:paddingVertical="15dp"
+                android:text="actors"
+                android:textColor="#B36F6D"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/f4"
+        android:layout_width="116dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/frame3"
+        app:layout_constraintTop_toBottomOf="@+id/frame2"
+        app:layout_constraintVertical_bias="0.856">
+
+        <ImageButton
+            android:id="@+id/favourite"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="63dp"
+            android:layout_height="57dp"
+            android:adjustViewBounds="false"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:cropToPadding="false"
+            android:foregroundGravity="center"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            app:srcCompat="@android:drawable/btn_star" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
